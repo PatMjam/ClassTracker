@@ -4,14 +4,16 @@ using ClassTracker.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ClassTracker.Migrations
 {
     [DbContext(typeof(ClassTrackerContext))]
-    partial class ClassTrackerContextModelSnapshot : ModelSnapshot
+    [Migration("20220410050617_Teacher seed data")]
+    partial class Teacherseeddata
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

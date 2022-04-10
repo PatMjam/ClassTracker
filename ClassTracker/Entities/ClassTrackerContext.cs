@@ -23,6 +23,10 @@ namespace ClassTracker.Entities
         protected override void OnModelCreating(ModelBuilder builder)
         {
             // this is the method used to configure
+            builder.Entity<Teacher>().HasData(
+                    new Teacher { TeacherId = 1, TeacherName = "Melissa", TeacherEmail = "mhour25@eq.edu.au", TeacherPhone = "0410541265" },
+                    new Teacher { TeacherId = 2, TeacherName = "Erick", TeacherEmail = "ekala1@eq.edu.au", TeacherPhone = "0415752145"}
+                );
         }
     }
 }
